@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Morse - decoder</title>
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+      <div class="container">
+            <h1>MORSE DECODER</h1>
+            <div class="container-swap">
+                  <p id="input-desc">morse</p>
+                  <button id="swap" title="swap">
+                        <i class="fas fa-exchange-alt"></i>
+                  </button>
+                  <p id="output-desc">words</p>
+            </div>
+            <div class="row">
+                  <div id="input" class="column">
+                        <button id="translate" title="translate">
+                              <i class="fas fa-angle-double-right"></i>
+                        </button>
+                        <div class="overlay">
+                              <textarea id="input-content" placeholder="add morse code"></textarea>
+                        </div>
+                  </div>
+                  <div id="output" class="column">
+                        <div class="overlay">
+                              <div class="content"></div>
+                        </div>
+                  </div>
+            </div>
+      </div>
       <script src="dist/bundle.js"></script>
 </body>
+
 </html>

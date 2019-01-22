@@ -1,0 +1,155 @@
+body {
+      margin: 0;
+      font-family: 'Fira Sans', sans-serif;
+      color: #404040;
+}
+.container {
+      height: 100vh;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flex;
+      display: -webkit-flex;     
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      justify-content: space-between;
+      -moz-justify-content: space-between;
+      -webkit-justify-content: space-between;
+}
+.container h1 {
+      display: inline-block;
+      width: 100%;
+      color: #14A19A;
+      text-align: center;
+      margin: 0;
+      height: 24vh;
+      line-height: 25vh;
+      font-size: 3.5em;
+      font-weight: 500;
+}
+.container-swap {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flex;
+      display: -webkit-flex;
+      width: 100%;
+      justify-content: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+}
+.container-swap p {
+      width: 30%;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.2em;
+}
+.container .row {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flex;
+      display: -webkit-flex;
+      height: 100%;
+      padding: 5vh 10vw 10vh 10vw;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+}
+.container .row .column {
+      width: 49.5%;
+      height: 100%;
+      border-radius: 10px;
+      position: relative;
+      background: #d9d9d9;
+}
+.container .row .column .overlay {
+      padding: 20px 20px 70px 20px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+}
+.container .row .column  textarea, .container .row .content {
+      background: transparent; 
+      height: 100%;
+      width: 100%;
+      border: none; 
+      font-family: inherit; 
+      font-size: 1.2em; 
+      line-height: 28px; 
+      resize: none; 
+      outline: none;
+      padding-right: 20px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      overflow: auto;
+}
+.container .row .column textarea::-webkit-scrollbar-track, .content::-webkit-scrollbar-track {
+	border-radius: 5px;
+	background-color: #F2F2F2;
+}
+.container .row .column textarea::-webkit-scrollbar, .content::-webkit-scrollbar {
+	width: 8px;
+      background-color: #f2f2f2;
+}
+.container .row .column textarea::-webkit-scrollbar-thumb, .content::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #404040;
+}
+.container button {
+      border-radius: 50%;
+      background:#14A19A;
+      color: #f2f2f2;
+      border: none;
+      transition: all .4s cubic-bezier(0.19, 0.16, 0.25, 1.95);
+      -webkit-transition: all .4s cubic-bezier(0.19, 0.16, 0.25, 1.95);
+      -moz-transition: all .4s cubic-bezier(0.19, 0.16, 0.25, 1.95);
+      -o-transition: all .4s cubic-bezier(0.19, 0.16, 0.25, 1.95);
+      cursor: pointer;
+      -webkit-box-shadow: 0px 2px 15px 0px rgba(64,64,64,.7);
+      -moz-box-shadow: 0px 2px 15px 0px rgba(64,64,64,.7);
+      box-shadow: 0px 2px 15px 0px rgba(64,64,64,.7);
+      outline: none;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flex;
+      display: -webkit-flex;      
+      align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      justify-content: center;
+      -moz-justify-content: center;
+      -webkit-justify-content: center;
+      height: 50px;
+      width: 50px;
+      font-size: 1.3em;
+}
+.container .row #translate {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+}
+.container button:hover {
+      box-shadow: 0px 8px 15px 0px rgba(64,64,64,.7);
+      -webkit-box-shadow: 0px 8px 15px 0px rgb(64, 64, 64.7);
+      -moz-box-shadow: 0px 8px 15px 0px rgba(64,64,64,.7);
+      transform: scale(1.07);
+      -webkit-transform: scale(1.07);
+      -moz-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+      -o-transform: scale(1.07);
+}
+
